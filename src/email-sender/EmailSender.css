@@ -1,0 +1,110 @@
+/* EmailSender.css */
+
+/* Container Styling */
+.container {
+  margin: 20px auto;
+  max-width: 90%; /* Adjust to 90% for smaller screens */
+  padding: 20px;
+  background-color: #f4f8fb;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 500px; /* Restrict to 500px for larger screens */
+  }
+}
+
+/* Header Styling */
+.header {
+  text-align: center;
+  color: #1e90ff;
+  font-size: 1.8rem; /* Use responsive font size */
+  font-weight: bold;
+}
+
+/* Form Styling */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Field Container */
+.field-container {
+  margin-bottom: 15px;
+}
+
+/* Label Styling */
+.label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input and Textarea Styling */
+.input,
+.textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+.textarea {
+  min-height: 100px;
+}
+
+/* Button Styling */
+.button {
+  padding: 12px 20px;
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1c86ee;
+}
+
+/* Loading and Response Text Styling */
+.loading,
+.response {
+  text-align: center;
+  font-weight: bold;
+}
+
+.loading {
+  color: #1e90ff;
+  margin-top: 15px;
+}
+
+.response {
+  color: #28a745;
+  margin-top: 15px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .header {
+    font-size: 1.6rem;
+  }
+  .input, .textarea {
+    font-size: 0.9rem;
+  }
+  .button {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
